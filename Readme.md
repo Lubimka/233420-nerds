@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Anna Kushakova](https://up.htmlacademy.ru/htmlcss/18/user/233420).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
