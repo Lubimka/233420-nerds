@@ -16,10 +16,10 @@
           <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="store">Корзина</li>
-        </ul>
       </nav>
+      <ul class="user-navigation">
+        <li class="store">Корзина</li>
+      </ul>
     </header>
 
     <main>
@@ -29,24 +29,24 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-            <input type="range" multiple min="0" max="15000" step="100" value="1000,10000">
-            <textarea name="min-price" placeholder="0"></textarea>
-            <textarea name="max-price" placeholder="15000"></textarea>
+            <input type="range" multiple min="0" max="15000" step="100">
+            <input type="number" name="min-price" min="0" max="15000" step="100" value="0">
+            <input type="number" name="max-price" min="0" max="15000" step="100" value="15000">
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-radio" type="radio" name="lattice" value="adaptive" checked>
-                Адаптивная
+                <label><input class="filter-radio" type="radio" name="lattice" value="adaptive" checked>
+                Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="filter-radio" type="radio" name="lattice" value="fix">
-                Фиксированная
+                <label><input class="filter-radio" type="radio" name="lattice" value="fix">
+                Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="filter-radio" type="radio" name="lattice" value="rubber">
-                Резиновая
+                <label><input class="filter-radio" type="radio" name="lattice" value="rubber">
+                Резиновая</label>
                 </li>
             </ul>
           </fieldset>
@@ -54,27 +54,28 @@
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
-                <input class="filter-checkbox" type="checkbox" name="slider" checked>
-                Слайдер
+                <label><input class="filter-checkbox" type="checkbox" name="slider" checked>
+                Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="filter-checkbox" type="checkbox" name="features">
-                Блок преимуществ</li>
-              <li class="filter-option">
-                <input class="filter-checkbox" type="checkbox" name="news" checked>
-                Новости
+                <label><input class="filter-checkbox" type="checkbox" name="features">
+                Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="filter-checkbox" type="checkbox" name="gallery">
-                Галерея
+                <label><input class="filter-checkbox" type="checkbox" name="news" checked>
+                Новости</label>
               </li>
               <li class="filter-option">
-                <input class="filter-checkbox" type="checkbox" name="store">
-                Корзина
+                <label><input class="filter-checkbox" type="checkbox" name="gallery">
+                Галерея</label>
+              </li>
+              <li class="filter-option">
+                <label><input class="filter-checkbox" type="checkbox" name="store">
+                Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button type="submit" class="filter-btn btn">Показать</button>
         </form>
       </section>
       <section class="sorting">
@@ -93,7 +94,7 @@
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
             <img src="http://placehold.it/150x300" width="150" height="300" alt="Сайт Sedona">
-            <a class="button" href="store.html">9 900 руб.</a>
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/150x300" width="150" height="300" alt="Сайт PINK">
@@ -129,23 +130,23 @@
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д.19/8</p>
           <p>тел. +7(812)275-75-75</p>
-          <a class="button" href="write-us.html">Напишите нам</a>
+          <a class="btn" href="write-us.html">Напишите нам</a>
         </section>
       </section>
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <img src="http://placehold.it/25x25" width="25" height="25" alt="vk">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <img src="http://placehold.it/25x25" width="25" height="25" alt="fb">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <img src="http://placehold.it/25x25" width="25" height="25" alt="insta">
             </a>
           </li>
