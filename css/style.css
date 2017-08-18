@@ -1,0 +1,24 @@
+body {
+  font-size: 16px;
+  font-family: "Roboto", "Calibri";
+  color: rgb(40, 49, 54);
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
