@@ -19,7 +19,7 @@
         </ul>
       </nav>
       <ul class="user-navigation">
-        <li class="store">Корзина</li>
+        <li class="store"><a href="store.html">Корзина</a></li>
       </ul>
     </header>
 
@@ -83,9 +83,9 @@
         <h2 class="visually-hidden">Сортировка</h2>
         <b>Сортировать:</b>
         <ul class="sorting-list">
-          <li class="sorting-item">По цене</li>
-          <li class="sorting-item">По типу</li>
-          <li class="sorting-item">По названию</li>
+          <li class="sorting-item"><button type="button" name="sorting-cost">По цене</button></li>
+          <li class="sorting-item"><button type="button" name="sorting-type">По типу</button></li>
+          <li class="sorting-item"><button type="button" name="sorting-name">По названию</button></li>
         </ul>
       </section>
       <section class="catalog">
@@ -98,19 +98,34 @@
             <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
+            <h3>Pink App</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт PINK">
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
+            <h3>Barbershop</h3>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Барбершоп Бородинский">
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
+            <h3>Mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт MISHKA">
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
+            <h3>A plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт А+">
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
           <li class="catalog-item">
+            <h3>Кваст</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт КВАСТ">
+            <a class="btn" href="store.html">9 900 руб.</a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -156,6 +171,24 @@
         <p>Скидка 10% для друзей из соц сетей.</p>
       </div>
     </footer>
+
+    <section>
+      <p>Напишите нам</p>
+      <form class="write-us-form" method="post">
+        <label>Ваше имя:
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label>Ваш e-mail:
+          <input type="text" name="email" placeholder="Для отправки ответа">
+        </label>
+        <label>
+          Текст письма
+          <input type="text" name="text" placeholder="В сводобной форме">
+        </label>
+        <input type="submit">
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>

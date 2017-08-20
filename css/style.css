@@ -1,24 +1,47 @@
+@font-face {
+  font-family: "Roboto-Medium"; /* Имя шрифта */
+  src: url(fonts/Roboto-master/Roboto-Medium.ttf);
+}
+
 body {
   font-size: 16px;
-  font-family: "Roboto", "Calibri";
+  font-family: "Roboto-Regular", "Calibri";
   color: rgb(40, 49, 54);
   line-height: 1.5;
   font-weight: normal;
 }
 
+.visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
 h1 {
   font-size: 55px;
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   color: rgb(0, 0, 0);
   line-height: 1;
   font-weight: normal;
 }
 
+.navigation-item,
+.store {
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.875;
+}
+
 h3 {
   font-size: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto-Regular";
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.25;
-  text-transform: uppercase;
+}
+
+.features-header {
+  font-size: 55px;
+  font-family: "Roboto-Medium";
 }
