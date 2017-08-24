@@ -1,47 +1,534 @@
-@font-face {
-  font-family: "Roboto-Medium"; /* Имя шрифта */
-  src: url(fonts/Roboto-master/Roboto-Medium.ttf);
-}
 
 body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  font-family: "Roboto-Regular", "Calibri";
-  color: rgb(40, 49, 54);
+  font-weight: 400;
   line-height: 1.5;
-  font-weight: normal;
+  color: rgb(40, 49, 54);
+
+  background-color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-header-logo svg:hover {
+  fill: #303030;
+}
+
+.main-header-logo svg:active {
+  fill: #a6a6a6;
+}
+
+.main-navigation,
+.user-navigation {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.875;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
 
 .visually-hidden {
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
 
-h1 {
-  font-size: 55px;
-  font-family: "Roboto-Regular";
-  color: rgb(0, 0, 0);
-  line-height: 1;
-  font-weight: normal;
+.site-navigation,
+.user-navigation {
+  list-style: none;
 }
 
-.navigation-item,
-.store {
-  font-size: 16px;
-  font-family: "Roboto-Regular";
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  line-height: 1.875;
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
 }
 
-h3 {
-  font-size: 24px;
-  font-family: "Roboto-Regular";
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  line-height: 1.25;
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.features {
+  background-color: #eeeeee;
+}
+
+.slider2,
+.slider3 {
+  display: none;
 }
 
 .features-header {
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 55px;
-  font-family: "Roboto-Medium";
+  font-weight: 500;
+  color: #000000;
 }
+
+.slider-btn {
+  width: 240px;
+  height: 50px;
+  background-color: #fb565a;
+  text-align: center;
+}
+
+.slider-btn .btn {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+  background-color: #e74246;
+}
+
+.slider-btn:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.slider-btn .btn:active {
+  opacity: 0.3;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.features-btn-red {
+  width: 160px;
+  height: 53px;
+  background-color: #fb565a;
+  text-align: center;
+}
+
+.features-btn-green {
+  width: 160px;
+  height: 53px;
+  background-color: #00ca74;
+  text-align: center;
+}
+
+.features-btn-yellow {
+  width: 160px;
+  height: 53px;
+  background-color: #efc84a;
+  text-align: center;
+}
+
+.features-btn-red .btn,
+.features-btn-green .btn,
+.features-btn-yellow .btn {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.features-btn-red:hover,
+.features-btn-red:focus {
+  background-color: #e74246;
+}
+
+.features-btn-green:hover,
+.features-btn-green:focus {
+  background-color: #00bc6c;
+}
+
+.features-btn-yellow:hover,
+.features-btn-yellow:focus {
+  background-color: #eab534;
+}
+
+.features-btn-red:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.features-btn-green:active {
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 #009958;
+}
+
+.features-btn-yellow:active {
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 #ce961f;
+}
+
+.features-btn-red .btn:active ,
+.features-btn-green .btn:active ,
+.features-btn-yellow .btn:active {
+  opacity: 0.3;
+}
+
+.about-header {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+}
+
+.about b,
+.about-percents b {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.about-services ul,
+.percents-list {
+  list-style: none;
+}
+
+.about-services img {
+  padding-bottom: 5px;
+  padding-right: 2px;
+}
+/* не уверенна, в правльности такого выравнимания img здесь */
+
+.table-percents td {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 0.224;
+  color: #000000;
+}
+
+.clients-list img {
+  opacity: 0.2;
+}
+
+.clients-list img:hover,
+.clients-list img:focus {
+  opacity: 1;
+}
+
+.clients-list img:active {
+  opacity: 0.1;
+}
+
+.footer-address h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.667;
+  color: #000000;
+}
+
+.footer-address div {
+  width: 219px;
+  height: 50px;
+  background-color: #fb565a;
+  text-align: center;
+}
+
+.footer-address a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-address {
+  width: 319px;
+  height: 308px;
+  background-color: #ffffff;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social li {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  text-align: center;
+}
+
+.social-btn {
+  line-height: 89px;
+}
+
+.footer-social li:hover,
+.footer-social li:focus {
+  background-color: #e74246;
+}
+
+.footer-social li:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.social-btn img:active {
+  opacity: 0.3;
+}
+
+.footer-social b {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+}
+
+.write-us-popup {
+  margin: 50px;
+  width: 1039px;
+  height: 669px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+/* Размеры из фотошопа взяла, но мне кажется очень уж большое окно получилось */
+
+.write-us-popup p {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+}
+
+.write-us-form label {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.125;
+  color: #000000;
+}
+
+.form-name,
+.form-email {
+  width: 348px;
+  height: 38px;
+  padding: 10px;
+}
+
+.form-letter {
+  width: 748px;
+  height: 106px;
+  padding: 10px;
+}
+
+.login-form input[type="text"] {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(68, 68, 68, 0.502);
+  line-height: 1.125;
+}
+
+.form-send {
+  width: 260px;
+  height: 50px;
+  background-color: #fb565a;
+  border: none;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.site-navigation-current {
+  text-decoration: underline;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.inner-page h1 {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filters legend,
+.sorting b {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.667;
+  color: #000000;
+}
+
+.filters ul,
+.sorting-list {
+  list-style: none;
+}
+
+.filter-option {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgb(40, 49, 54);
+}
+
+.filter-form input[type="number"] {
+  width: 80px;
+  height: 38px;
+  background-color: #eeeeee;
+  border: none;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+
+.cost-range-back {
+  border-radius: 3px;
+  width: 261px;
+  height: 81px;
+  background-color: rgb(241, 241, 241);
+}
+
+.filter-option:hover,
+.filter-option:focus {
+  color: #000000;
+}
+
+.filter-option:disabled {
+  color: rgba(40, 49, 54, 0.302);
+}
+
+.filter-btn {
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: none;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-btn:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  color: rgba(0, 0, 0, 0.302);
+  border: none;
+}
+
+.sorting-item {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+  line-height: 1.286;
+}
+
+.sorting-item:hover,
+.sorting-item:focus {
+  opacity: 0.6;
+}
+
+.sorting-item:active {
+  opacity: 1;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item svg {
+  opacity: 0.12;
+}
+
+.catalog-item svg:hover,
+.catalog-item svg:focus,
+.catalog-item svg:active {
+  opacity: 1;
+}
+/*Не понимаю, как сделать, чтобы при наведенни на картинку svg становилось непрозрачным */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+.pagination-item-following {
+  width: 260px;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  color: rgba(0, 0, 0, 0.302);
+  border: none;
+}
+
+.pagination-item-current {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
